@@ -8,7 +8,7 @@ class SpyCat(Base):
     __tablename__ = 'spy_cats'
 
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, nullable=False)
+    name = Column(String, nullable=False, unique=True)
     years_of_experience = Column(Integer, nullable=False)
     breed = Column(String, nullable=False)
     salary = Column(Float, nullable=False)
